@@ -1,0 +1,30 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid" id="navContainer">
+      <div class="row" id="headerNav"><h3 id="logo"><img src="http://www.jleague.jp/img/common/h1_logo02.png"/>Best Eleven</h3></div>
+      <div class="row" id="lowerNav">
+          <div class="col-sm-1" id="navSpace"></div>
+          <div class="col-sm-10">
+          <ul class="nav navbar-nav" id="ulNav">
+              <li  {% if "/" == request.path %}class="active"{% endif %}><a href="{% url 'player_list' %}">Home</a></li>
+              <li  {% if "/post/register/" == request.path %}class="active"{% endif %}><a href="{% url 'register'%}">Register</a></li>
+              <li  {% if "/post/vote/" == request.path %}class="active"{% endif %}><a href="{% url 'vote' %}">Vote</a></li>
+              {% if user.is_authenticated %}
+                <li  {% if "/post/logout/" == request.path %}class="active"{% endif %}><a href="{% url 'logout' %}">Logout</a></li>
+              {% else %}
+                <li  {% if "/post/login/" == request.path %}class="active"{% endif %}><a href="{% url 'login' %}" >Login</a></li>
+              {% endif %}
+              {% if user.is_authenticated %}
+                {% if user.is_superuser %}
+                  <li><a id="loginStatus">You are logged in and you are admin</a></li>
+                {% else %}            
+                  <li>You are logged in </li>
+                {% endif %}
+              {% endif %}
+            </ul>
+            </div>
+            <div class="col-sm-1" id="navSpace"></div>
+        </div>
+        </div>
+</nav>
+
+<script type="text/javascript" src="/static/js/navbar/loginstatusResize.js"></script>

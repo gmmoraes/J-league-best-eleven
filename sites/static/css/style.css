@@ -1,0 +1,117 @@
+@import 'sidebar.css';
+@import 'list.css';
+
+#navContainer{
+    height: 100px;
+    background-color:#363636;
+    
+}
+
+h3{
+    color: white !important;
+    text-align: center;
+    font-family: 'din_regular';
+    text-transform: uppercase;
+}
+
+#headerNav{
+    height: 50px;
+}
+
+#navSpace{
+    background-color: white;
+    padding: 25px;
+}
+
+#lowerNav{
+    background-color: #e22319;
+}
+
+#ulNav a{
+    color: white !important;
+    font-family: 'din_regular';
+    height: 42px;
+    line-height: 45px;
+    padding: 0 8px;
+}
+
+#loginStatus{
+    margin-left: 600px;
+}
+
+
+/** body **/
+
+h1{
+    text-align: center;
+}
+
+#registerContainer, #loginContainer, #voteContainer{
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    -webkit-box-shadow: -4px 22px 20px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 22px 20px -8px rgba(0,0,0,0.75);
+    box-shadow: -4px 22px 20px -8px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+
+#registerP, #loginP{
+    padding-top: 100px;
+}
+
+#registerH1, #loginH1, #voteH1{
+    margin: 0 auto;
+    padding-bottom: 10px;
+    width: 100% !important;
+    background-color: #ECECEC !important; 
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 3px 3px 0px 0px;
+    border-radius: 10px 10px 0px 0px; 
+}
+
+#registerContainerHeader, #LoginContainerHeader, #voteContainerHeader{
+    width: 300px;
+    height: 50px;
+    float: left;
+    margin-left: -15px;
+    margin-top: 15px;
+    
+}
+
+
+
+#registerButton, #loginButton, #voteButton{
+    width: 100%;
+    margin-top: 20px;
+}
+
+#id_email, #id_password1, #id_password2{
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 20px;
+}
+
+
+
+
+/** login **/
+
+#passwordLoginInput{
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+ #emailLoginInput{
+     margin-top: 100px;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

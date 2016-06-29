@@ -1,0 +1,72 @@
+{% extends 'sites/index.html' %}
+
+{% block content %}
+<h1><a href="" id="aList">Best of the week</a></h1>
+
+<div class="container" id="homeContainer">
+    {% for player in players %}
+        {% empty %}
+            <a  href="{% url 'vote' %}" id="listEmpty">No votes, please vote here</a>
+    {% endfor %}    
+        <div class="row" id="attList">
+            {% for player in players %}
+                {% if player.position == "FW" %}
+                    <div class="col-sm-4" name = "{{ player.team }}" id="listPlayers"> <div id="playerListName">{{player.name}}</div></div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        
+        <div class="row" id="mfOList" >
+            {% for player in players %}
+                {% if player.position == "MF" %}
+                    {% if player.count > 6 %}
+                        <div class="col-sm-4" name = "{{ player.team }}"> <div id="playerListName">{{player.name}}</div> </div>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </div>
+        
+        <div class="row" id="mfList" >
+            {% for player in players %}
+                {% if player.position == "MF" %}
+                    {% if player.count < 6 %}
+                    <div class="col-sm-4" name = "{{ player.team }}"> <div id="playerListName">{{player.name}}</div> </div>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </div>
+        
+        <div class="row" id="mfDList" >
+            {% for player in players %}
+                {% if player.position == "MF" %}
+                    {% if player.count > 11 %}
+                        <div class="col-sm-4" name = "{{ player.team }}"> <div id="playerListName">{{player.name}}</div> </div>
+                        {% endif %}
+                {% endif %}
+            {% endfor %}
+        </div>
+        
+        
+        <div class="row" id="dfList">
+            {% for player in players %}
+                {% if player.position == "DF" %}
+                    <div class="col-sm-4" name = "{{ player.team }}"> <div id="playerListName">{{player.name}}</div> </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+
+        <div class="row"id="gkList">
+            {% for player in gk %}
+                {% if player.position == "GK" %}
+                    <div class="col-sm-4" name = "{{ player.team }}" > <div id="playerListName">{{player.name}}</div> </div>
+                {% endif %}
+            {% endfor %} 
+        </div>
+
+</div>
+
+
+
+<script type="text/javascript" src="/static/js/list/list.js"></script>
+{% endblock %}
+

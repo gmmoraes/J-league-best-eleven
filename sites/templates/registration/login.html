@@ -1,0 +1,29 @@
+{% extends 'sites/index.html' %}
+
+{% block content %}
+
+{% if form.errors %}
+<p>Your username and password didn't match. Please try again.</p>
+{% endif %}
+
+<form method="post" action="{% url 'login' %}">
+    {% csrf_token %}
+    <div class="container" id="loginContainer">
+        <div id="LoginContainerHeader">
+            <h1 id="loginH1">Login</h1>
+        </div>
+        <div>{{ form.email}}</div>
+        <div>{{ form.password }}</div>
+
+        <input type="submit" value="login" class="btn btn-danger" id="loginButton"/>
+        <input type="hidden" name="next" value="{{ next }}" />
+        {% if user.is_authenticated %}
+        {% else %}
+        <p id="registerP">Not registered? Please Register<a href="{% url 'register' %}" > here</a></p>
+        {% endif %}
+    </div>
+
+
+</form>
+
+{% endblock %}
