@@ -13,7 +13,7 @@ I am a football fanatic and the J-league has always beens one of my favourite fo
 
 
 #Project Setup
-In order to run this app on your machine follow the following instructions:
+In order to run this app on your machine install the following:
 
 Django: 1.9
 
