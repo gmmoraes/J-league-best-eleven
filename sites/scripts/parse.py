@@ -128,7 +128,7 @@ for a in player_list:
     if a =="Yokohama F･Marinos".decode('utf-8'):
         index = player_list.index(a)
         player_list[index] = "Yokohama"
-teams = ['Nagoya Grampus', 'Kashiwa Reysol', 'Vissel Kobe', 'Kashima Antlers', 'Omiya Ardija', 'Albirex Niigata', 'Sagan Tosu', 'Gamba Osaka', 'Shonan Bellmare', 'Jubilo Iwata', 'Avispa Fukuoka', 'Kawasaki Frontale', 'Sanfrecce Hiroshima', 'Urawa Reds', 'Vegalta Sendai', 'Ventforet Kofu', 'F.C.Tokyo', 'Yokohama']
+teams = ['Kawasaki Frontale', 'Kashima Antlers', 'Cerezo Osaka', 'Kashiwa Reysol', 'Jubilo Iwata', 'Urawa Reds', 'Sagan Tosu', 'Vissel Kobe', 'Gamba Osaka', 'Hokkaido Consadole Sapporo', 'Vegalta Sendai', 'Sanfrecce Hiroshima', 'F.C.Tokyo', 'Shimizu S-Pulse', 'Ventforet Kofu', 'Albirex Niigata', 'Omiya Ardija','Yokohama']
 list_of_lists = []
 index_list = []
 number = 0
