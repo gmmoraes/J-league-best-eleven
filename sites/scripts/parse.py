@@ -123,12 +123,12 @@ for url2 in url_list:
                                         index = subbs_list.index(code.text.lstrip())
                                         player_list.append(subbs_list[index - 1])
                                         player_list.append(code.text.lstrip())
-
+print player_list
 for a in player_list:
     if a =="Yokohama F･Marinos".decode('utf-8'):
         index = player_list.index(a)
         player_list[index] = "Yokohama"
-teams = ['Kawasaki Frontale', 'Kashima Antlers', 'Cerezo Osaka', 'Kashiwa Reysol', 'Jubilo Iwata', 'Urawa Reds', 'Sagan Tosu', 'Vissel Kobe', 'Gamba Osaka', 'Hokkaido Consadole Sapporo', 'Vegalta Sendai', 'Sanfrecce Hiroshima', 'F.C.Tokyo', 'Shimizu S-Pulse', 'Ventforet Kofu', 'Albirex Niigata', 'Omiya Ardija','Yokohama']
+teams = ['Kawasaki Frontale', 'Kashima Antlers', 'Cerezo Osaka', 'Kashiwa Reysol', 'Jubilo Iwata', 'Urawa Reds', 'Sagan Tosu', 'Vissel Kobe', 'Gamba Osaka', 'Hokkaido Consadole Sapporo', 'Vegalta Sendai', 'Sanfrecce Hiroshima', 'F.C.Tokyo', 'Shimizu S-Pulse', 'Nagoya Grampus', 'V･Varen Nagasaki', 'Shonan Bellmare','Yokohama']
 list_of_lists = []
 index_list = []
 number = 0
