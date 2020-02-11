@@ -1,6 +1,6 @@
 BeautifulSoup==3.2.1
 BzrTools==2.6.0
-Django==1.9
+Django==1.11.28
 Pillow==2.3.0
 SecretStorage==2.0.0
 ansicolors==1.1.8
